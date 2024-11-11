@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Make My Days Always Happy, Horia</title>
+    <style>
+        body {
+            background-color: #eafaf1; /* Light green background */
+            color: #006400; /* Dark green text for contrast */
+            font-family: 'Brush Script MT', cursive;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3.5em;
+            color: #2e8b57; /* Sea green */
+            text-shadow: 3px 3px 10px #98fb98; /* Pale green glow */
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .message {
+            font-size: 1.5em;
+            color: #006400;
+            margin: 20px auto;
+            max-width: 600px;
+            line-height: 1.6;
+            font-style: italic;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        .phrase-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .phrase {
+            font-size: 1.5em;
+            color: #2e8b57;
+            background: #d0f0c0; /* Light green box */
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transform: scale(0.8);
+            animation: appear 1.5s ease-in-out forwards;
+        }
+        .phrase:nth-child(odd) {
+            background: #a2e4b8; /* Softer green for alternating phrases */
+            color: #004b23;
+        }
+        .phrase:nth-child(even) {
+            background: #c1e7cf; /* Even softer green */
+            color: #2e8b57;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes appear {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .phrase:nth-child(odd) { animation-delay: 0.5s; }
+        .phrase:nth-child(even) { animation-delay: 1s; }
+    </style>
+</head>
+<body>
+    <h1>You Make My Days Always Happy, Horia</h1>
+    <div class="message">
+        If you didn’t exist, my world would be dark indeed. Your smile brightens my life in ways I can hardly express, and each moment with you makes everything feel more beautiful.
+    </div>
+    <div class="phrase-container">
+        <span class="phrase">"Whatever our souls are made of, his and mine are the same." - Emily Brontë</span>
+        <span class="phrase">"You have bewitched me, body and soul." - Jane Austen</span>
+        <span class="phrase">"I am yours, don’t give myself back to me." - Rumi</span>
+        <span class="phrase">"There is no charm equal to tenderness of heart." - Jane Austen</span>
+        <span class="phrase">"Love is composed of a single soul inhabiting two bodies." - Aristotle</span>
+        <span class="phrase">"I am in you and you in me, mutual in divine love." - William Blake</span>
+        <span class="phrase">"The soul that can speak with its eyes can also kiss with a gaze." - Gustavo Adolfo Bécquer</span>
+        <span class="phrase">"To love and be loved is to feel the sun from both sides." - David Viscott</span>
+        <span class="phrase">"One word frees us of all the weight and pain of life: That word is love." - Sophocles</span>
+        <span class="phrase">"There is no remedy for love but to love more." - Henry David Thoreau</span>
+        <span class="phrase">"In your eyes I found my paradise." - Unknown</span>
+        <span class="phrase">"For it was not into my ear you whispered, but into my heart." - Judy Garland</span>
+    </div>
+
+    <!-- Background music with autoplay and loop -->
+    <audio autoplay loop>
+        <source src="romantic-melody.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+</body>
+</html>
